@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Reference - Calculation Docs</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <link href="../assets/_mkdocstrings.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "calculator.calculations", url: "#_top", children: [
+          ]},
+          {title: "add()", url: "#calculator.calculations.add", children: [
+          ]},
+          {title: "divide()", url: "#calculator.calculations.divide", children: [
+          ]},
+          {title: "multiply()", url: "#calculator.calculations.multiply", children: [
+          ]},
+          {title: "subtract()", url: "#calculator.calculations.subtract", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../explanation/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../explanation/" class="btn btn-xs btn-link">
+        Explanation
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../how-to-guides/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../how-to-guides/" class="btn btn-xs btn-link">
+        How-To Guides
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p>This part of the project documentation focuses on
+an <strong>information-oriented</strong> approach. Use it as a
+reference for the technical implementation of the
+<code>calculator</code> project code.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+<a id="calculator.calculations"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Provide several sample math calculations.</p>
+<p>This module allows the user to make mathematical calculations.</p>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; from calculator import calculations
+&gt;&gt;&gt; calculations.add(2, 4)
+6.0
+&gt;&gt;&gt; calculations.multiply(2.0, 4.0)
+8.0
+&gt;&gt;&gt; from calculator.calculations import divide
+&gt;&gt;&gt; divide(4.0, 2)
+2.0</code></pre>
+      <p>The module contains the following functions:</p>
+<ul>
+<li><code>add(a, b)</code> - Returns the sum of two numbers.</li>
+<li><code>subtract(a, b)</code> - Returns the difference of two numbers.</li>
+<li><code>multiply(a, b)</code> - Returns the product of two numbers.</li>
+<li><code>divide(a, b)</code> - Returns the quotient of two numbers.</li>
+</ul>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="calculator.calculations.add" class="doc doc-heading">
+<code class="highlight language-python">add(a, b)</code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>compute and return the sum of two numbers.</p>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; add(4.0, 2.0)
+6.0
+&gt;&gt;&gt; add(4, 2)
+6.0</code></pre>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>a</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the first addend in the addition.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>b</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the second addend in the addition.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>A number representing the arithmetic sum of <code>a</code> and <code>b</code>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>calculator/calculations.py</code></summary>
+        <pre class="highlight"><code class="language-python">def add(a: Union[float, int], b: Union[float, int]) -&gt; float:
+    """compute and return the sum of two numbers.
+
+    Examples:
+        &gt;&gt;&gt; add(4.0, 2.0)
+        6.0
+        &gt;&gt;&gt; add(4, 2)
+        6.0
+
+    Args:
+        a: A number representing the first addend in the addition.
+        b: A number representing the second addend in the addition.
+
+    Returns:
+        A number representing the arithmetic sum of `a` and `b`.
+    """
+    return float(a + b)</code></pre>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="calculator.calculations.divide" class="doc doc-heading">
+<code class="highlight language-python">divide(a, b)</code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Compute and return the quotient of two numbers.</p>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; divide(4.0, 2.0)
+2.0
+&gt;&gt;&gt; divide(4, 2)
+2.0
+&gt;&gt;&gt; divide(4, 0)
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero</code></pre>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>a</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the dividend in the division.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>b</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the divisor in the division.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>A number representing the quotient of <code>a</code> and <code>b</code>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>ZeroDivisionError</code>
+          </td>
+          <td><p>An error occurs when the divisor is <code>0</code>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>calculator/calculations.py</code></summary>
+        <pre class="highlight"><code class="language-python">def divide(a: Union[float, int], b: Union[float, int]) -&gt; float:
+    """Compute and return the quotient of two numbers.
+
+    Examples:
+        &gt;&gt;&gt; divide(4.0, 2.0)
+        2.0
+        &gt;&gt;&gt; divide(4, 2)
+        2.0
+        &gt;&gt;&gt; divide(4, 0)
+        Traceback (most recent call last):
+        ...
+        ZeroDivisionError: division by zero
+
+    Args:
+        a: A number representing the dividend in the division.
+        b: A number representing the divisor in the division.
+
+    Returns:
+        A number representing the quotient of `a` and `b`.
+
+    Raises:
+        ZeroDivisionError: An error occurs when the divisor is `0`.
+    """
+    if b == 0:
+        raise ZeroDivisionError("division by zero")
+    return float(a / b)</code></pre>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="calculator.calculations.multiply" class="doc doc-heading">
+<code class="highlight language-python">multiply(a, b)</code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Compute and return the product of two numbers.</p>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; multiply(4.0, 2.0)
+8.0
+&gt;&gt;&gt; multiply(4, 2)
+8.0</code></pre>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>a</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the multiplicand in the multiplication.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>b</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the multiplier in the multiplication.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>A number representing the product of <code>a</code> and <code>b</code>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>calculator/calculations.py</code></summary>
+        <pre class="highlight"><code class="language-python">def multiply(a: Union[float, int], b: Union[float, int]) -&gt; float:
+    """Compute and return the product of two numbers.
+
+    Examples:
+        &gt;&gt;&gt; multiply(4.0, 2.0)
+        8.0
+        &gt;&gt;&gt; multiply(4, 2)
+        8.0
+
+    Args:
+        a: A number representing the multiplicand in the multiplication.
+        b: A number representing the multiplier in the multiplication.
+
+    Returns:
+        A number representing the product of `a` and `b`.
+    """
+    return float(a * b)</code></pre>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="calculator.calculations.subtract" class="doc doc-heading">
+<code class="highlight language-python">subtract(a, b)</code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the difference of two numbers.</p>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; subtract(4.0, 2.0)
+2.0
+&gt;&gt;&gt; subtract(4, 2)
+2.0</code></pre>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>a</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the minuend in the subtraction.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>b</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the subtrahend in the subtraction.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>A number representing the difference between <code>a</code> and <code>b</code>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>calculator/calculations.py</code></summary>
+        <pre class="highlight"><code class="language-python">def subtract(a: Union[float, int], b: Union[float, int]) -&gt; float:
+    """Calculate the difference of two numbers.
+
+    Examples:
+        &gt;&gt;&gt; subtract(4.0, 2.0)
+        2.0
+        &gt;&gt;&gt; subtract(4, 2)
+        2.0
+
+    Args:
+        a: A number representing the minuend in the subtraction.
+        b: A number representing the subtrahend in the subtraction.
+
+    Returns:
+        A number representing the difference between `a` and `b`.
+    """
+    return float(a - b)</code></pre>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../explanation/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../explanation/" class="btn btn-xs btn-link">
+        Explanation
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../how-to-guides/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../how-to-guides/" class="btn btn-xs btn-link">
+        How-To Guides
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
